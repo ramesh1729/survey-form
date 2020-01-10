@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1 id="title">Job Portal Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">name
+                <input type="text" id="name" required placeholder="Enter your name">
+            </label>
+            <label for="email" id="email-label">email
+                <input type="email" id="email" required placeholder="Enter your email">
+            </label>
+            <label for="number" id="number-label">age (optional)
+                <input type="number" id="number" min="14" max="99" placeholder="age">
+            </label>
+            <p id="dropdown-description">which option best describes your current role?</p>
+            <select id="dropdown">
+                <option value="nothing">select</option>
+                <option value="student">student</option>
+                <option value="professional">professional</option>
+                <option value="unemployed">unemployed</option>
+            </select>
+            <p>are you looking for job?</p>
+            <div id="job-searching-status">
+                <label for="yes">
+                    <input id="yes" type="radio" name="job-searching-status" value="yes">yes
+                </label>
+                <label for="no">
+                    <input id="no" type="radio" name="job-searching-status" value="no">no
+                </label>
+                <label for="not-now">
+                    <input id="not-now" type="radio" name="job-searching-status" value="not-now">yes but not actively
+                </label>
+            </div>
+            <p>what is skill set? (Check all that apply)</p>
+            <div id="skill-set">
+                <label for="python">
+                    <input id="python"  value="python" type="checkbox">python
+                </label>
+                <label for="java">
+                    <input id="java" value="java" type="checkbox">java
+                </label>
+                <label for="javascript">
+                    <input id="javascript" value="javascript" type="checkbox">javascript
+                </label>
+                <label id="linux">
+                    <input id="linux" value="linux" type="checkbox">linux
+                </label>
+                <label id="networking">
+                    <input id="networking" value="networking" type="checkbox">networking
+                </label>
+            </div>
+            <p>any comments or suggestions?</p>
+            <textarea id="textarea"></textarea>
+            <div id="submit-button">
+                <input type="submit" id="submit">
+            </div>
+        </form>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
